@@ -3,18 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Mohammed Cv</title>
 </head>
 <body>
-    <div class="container">
-      <div class="sub">
-        <input type="text" name="" id="">
-        <button>serach</button>
-        <div class="test">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur reiciendis cupiditate quasi accusantium expedita, doloremque repellendus quis explicabo. Impedit distinctio sit tempore sequi vel, soluta unde corporis. Repellendus debitis, alias harum assumenda necessitatibus ipsa et nemo porro, repudiandae molestiae rem consequuntur vitae! Perferendis atque molestias ea ad earum deleniti iusto quo 
+    <div class="Hero">
+      <nav>
+        <div class="navbar">
+             <a href="./index.html" style="text-decoration: none;"><h1>RM</h1></a>
+             <div class="rgt">
+                 <a href="./skill.html">Skills</a>
+                 <a href="./assets/mohammed.pdf">Preview</a>
+                 <a href="/downloads">Download PDF</a>
+             </div>
         </div>
-      </div>
+        <i class='bx bx-menu' id="menu"></i>
+        <i class='bx bx-x' id="can"></i>
+             <div class="show">
+                 <ul>
+                     <li><a href="./skill.html">Skills</a></li>
+                     <li><a href= "./assets/mohammed.pdf">Preview</a></li>
+                     <li style="border-bottom: none;"><a href="/downloads">Download PDF</a></li>
+                 </ul>
+             </div>
+     </nav>
+       <div class="main">
+          <main>
+            <div class="main-info" style='padding: 20px; color: #f6f6f6;' >
+              <h1 id="greet">Hi, My Name is</h1>
+              <h2 id="name">Mohammed Rufai</h2>
+              <p id='type'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic eum tempore minus unde? Ab perferendis blanditiis perspiciatis quos molestias corporis aperiam molestiae earum voluptas consequuntur quas accusamus, odit tenetur.</p>
+              <button class="btn" onclick="location.href='./assets/mohammed.pdf'">Preview</button>
+              <button class="btn" onclick="location.href='downloads'">Download</button>
+            </div>
+          </main>
+        </div>
+        <footer>
+            &copy; CopyRight Mohammed Rufai 2023
+        </footer>
     </div>
+    <script>
+        let menu = document.getElementById('menu')
+        let show = document.getElementsByClassName('show')[0]
+        let icons = document.getElementById('can')
+
+        menu.addEventListener('click', ()=>{
+            show.classList.toggle('active')
+        })
+         
+    </script>
 </body>
 </html>

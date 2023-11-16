@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="skill.css">
+    <title>Skills</title>
+</head>
+<body>
+    <div class="Hero">
+        <nav>
+            <div class="navbar">
+                 <a href="./index.html" style="text-decoration: none;"><h1>RM</h1></a>
+                 <div class="rgt">
+                     <a href="./skill.html">Skills</a>
+                     <a href="./assets/mohammed.pdf">Preview</a>
+                     <a href="/downloads">Download PDF</a>
+                 </div>
+            </div>
+            <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-x' id="can"></i>
+                 <div class="show">
+                     <ul>
+                         <li><a href="./skill.html">Skills</a></li>
+                         <li><a href="./assets/mohammed.pdf">Preview</a></li>
+                         <li style="border-bottom: none;"><a href="/downloads">Download PDF</a></li>
+                     </ul>
+                 </div>
+         </nav>
+        <div class="preview">
+            <div id='side'>
+                <h2>Skills and Competencies</h2>
+            </div>
+            <fieldset id="skills">
+               <legend style="text-align: center; font-size: 18px; font-weight: bold;" >Digital Skills</legend>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JAVASCRIPT</li>
+                    <li>TYPESCRIPT</li>
+                    <li>BOOTSTRAP</li>
+                    <li>REACTJS</li>
+                    <li>NODEJS</li>
+                    <li>MYSQL</li>
+                    <li>SQL</li>
+                    <li>MATERIAL UI</li>
+                    <li>CHAKRA UI</li>
+                </ul>
+            </fieldset>
+            <fieldset id="sec-field">
+               <legend style="text-align: center; font-size: 18px; font-weight: bold;">Soft Skills</legend>
+                <ul>
+                    <li>An excellent team player</li>
+                    <li>Excellent communication skills</li>
+                    <li>Proactive with a result oriented mindset</li>
+                    <li>Proven ability to prioritize tasks and meet deadlines</li>
+                    <li>Good moral compass and ability to work with organization’s values</li>
+                    <li>Sensitive to cultural diversity and experience in a multicultural environment</li>
+                    <li>Possess the willingness to learn and embrace change to new network techniques</li>
+                </ul>
+            </fieldset>
+
+        </div>
+        <footer>
+            &copy; CopyRight Mohammed Rufai 2023
+        </footer>
+    </div>
+    <script>
+        let menu = document.getElementById('menu')
+        let show = document.getElementsByClassName('show')[0]
+
+        menu.onclick = () =>{
+            show.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
