@@ -137,7 +137,7 @@ li{
 footer{
     width: 100%;
     background: #000;
-    height: 7vh;
+    height: 50px;
     color: #666;
     word-spacing: 2px;
     letter-spacing: 1px;
@@ -272,7 +272,7 @@ footer{
     #side{
         width: 100%;
         height: 9%;
-        top: 8%;
+        top: 65px;
         left: 0;
     }
     #side h2{
@@ -332,13 +332,6 @@ footer{
         font-size: 15px;
     }
 
-    #side{
-        width: 100%;
-        height: 9%;
-        top: 7%;
-        left: 0;
-        z-index: 100;
-    }
     #side h2{
         width: 100%;
         padding-top: 20px;
