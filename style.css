@@ -16,19 +16,19 @@
 
 nav{
    width: 100vw;
-   height: 10vh;
+   height: 11%;
    background: #141517;
    position: fixed;
    top: 0;
    left: 0;
-   padding: 10px 70px;
 }
 .navbar{
-    width: 100%;
+    width: 88%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 nav a{
     text-decoration: none;
@@ -100,6 +100,10 @@ nav button{
     font-size: 15px;
 }
 
+.main{
+    flex: 1;
+}
+
 main{
     background: linear-gradient(to right bottom, #000000, #434343);
     width: 100%;
@@ -107,10 +111,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.main{
- flex: 1;
 }
 
 .main-info{
@@ -126,8 +126,8 @@ main{
 
 .main-info h2{
     letter-spacing: 2px;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 38px;
+    font-weight: 600;
     /* color: #283048; */
     color: crimson;
     text-shadow: 2px 0px 2px crimson;
@@ -157,7 +157,7 @@ main{
 
 footer{
     background: #000;
-    height: 7vh;
+    height: 60px;
     color: #666;
     word-spacing: 2px;
     letter-spacing: 1px;
@@ -167,18 +167,9 @@ footer{
 }
 
 
-
-@media screen and (max-width: 935px){
+@media screen and (max-width: 855px){
     .main-info{
         max-width: 90%;
-    }
-    nav{
-        padding: 0 20px;
-    }
-}
-@media screen and (max-width: 768px){
-    nav{
-        padding: 0 20px;
     }
 }
 
@@ -199,17 +190,13 @@ footer{
         display: none;
     }
 
-    .btn{
-        padding: 10px 15px;
-   }
-
    .main-info h1{
-     font-size: 30px;
+     font-size: 35px;
      font-weight: 600;
      letter-spacing: 2px;
    }
    .main-info h2{
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 450;
     letter-spacing: 1px;
    }
@@ -220,6 +207,29 @@ footer{
    footer{
     text-align: center;
    }
+}
+
+@media screen and (max-width: 400px){
+    .main-info{
+        max-width: 98%;
+    }
+    .main-info h1{
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+      .main-info h2{
+       font-size: 24px;
+       font-weight: 250;
+       letter-spacing: 1px;
+      }
+      .main-info p{
+       font-size: 15px;
+       line-height: 22px;
+      }
+    .btn{
+        padding: 10px 20px;
+    }
 }
 
 
