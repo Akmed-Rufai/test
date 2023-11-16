@@ -21,9 +21,6 @@ nav{
    position: fixed;
    top: 0;
    left: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
    padding: 0 70px;
 }
 .navbar{
@@ -103,10 +100,6 @@ nav button{
     font-size: 15px;
 }
 
-.main{
-    flex: 1;
-  }
-
 main{
     background: linear-gradient(to right bottom, #000000, #434343);
     width: 100%;
@@ -114,6 +107,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main{
+ flex: 1;
 }
 
 .main-info{
