@@ -20,18 +20,15 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 70px;
     z-index: 10;
  }
  .navbar{
-    width: 100%;
+    width: 88%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
 nav a{
@@ -67,36 +64,54 @@ nav a:hover{
  }
  #menu{
     display: none;
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    top: 13px;
+    right: 30px;
+    font-weight: 500;
+    cursor: pointer;
 }
+
 .show{
     display: none;
-}
- .navbar{
+    background: #000;
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 350px;
+    position: absolute;
+    top: -58px;
+    left: 0;
+}
+
+.show ul{
+    padding: 20px 0;
+    list-style: none;
+}
+
+.show ul li{
+    border-bottom: 1px solid #fff;
+    padding: 27px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.show ul li a{
+    font-size: 15px;
+}
+
+.main{
+    flex: 1;
 }
 
 .preview{
     width: 100%;
     height: 100%;
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4%;
     background: #ffffffcc;
     z-index: -7;
-}
-
-ul{
-    padding: 20px;
-}
-
-li{
-    margin-bottom: 10px;
+    padding: 60px 0 10px;
 }
 
 #side{
@@ -105,16 +120,22 @@ li{
     position: fixed; 
     left: 0; 
     top: 0; 
-    width: 250px;
+    width: 200px;
     color: aliceblue; 
     display: flex;
     justify-content: center;
     align-items: center; 
-    z-index: -9;
+    z-index: 9;
+}
+
+ul{
+    padding: 20px;
 }
 
 #side h2{
    width: 150px;
+   font-size: 23px;
+   margin-right: 10px;
 }
 
 #skills{
@@ -124,45 +145,37 @@ li{
 }
 
 #sec-field{
-  width: 40%;
+  width: 50%;
   height: 400px;
 }
 
 #sec-field li{
-    font-size: 18px;
+    font-size: 17px;
 }
 
 footer{
-    width: 100%;
     background: #000;
-    height: 50px;
+    height: 60px;
     color: #666;
     word-spacing: 2px;
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+    padding: 10px 0;
 }
-/* 
-@media screen and (max-width: 1148px){
 
-    .Hero{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width: 800px){
+ 
     .preview{
         width: 100%;
         max-width: 80%;
         margin: auto;
-        padding-top: 8%;
-        padding-left: 150px;
+        padding-left: 120px;
         gap: .2rem;
         flex-direction: column;
     }
-
 
     #sec-field{
         width: 100%;
@@ -173,71 +186,49 @@ footer{
         width: 100%;
         height: auto;
         margin-left: 80px;
+        
     }
     #skills ul{
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
         flex-wrap: wrap;
-        list-style: none;
     }
-    #sec-field ul {
-        list-style: none;
+    #skills ul li {
+        flex-basis: 150px;
     }
+
     #skills ul li, #sec-field ul li{
         margin-left: 10px;
-        font-size: 19px;
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width: px){
-    .Hero{
-        height: auto;
-    }
-    nav{
-        padding: 0 20px;
-    }
-    #skills, #sec-field{
-        margin-left: 60px;
+@media screen and (max-width: 768px){
+    .preview{
+        padding: 70px 0 10px 100px;
     }
 
     ul{
         padding: 10px;
     }
     #skills ul li, #sec-field ul li{
-       font-size: 18px;
+       font-size: 16px;
     }
-    #side{
-        width: 200px;
+    #side {
+        width: 180px;
+        
     }
     #side h2{
         font-size: 20px ;
     }
 
-    #sec-field{
-        width: 100%;
-        height: auto;
-    }
-    #skills{
-        width: 100%;
-        height: auto;
-    }
 }
 
-@media screen and (max-width: 768px){
-
+@media screen and (max-width: 507px){
     nav h1{
-     font-size: 19px;
+     font-size: 17px;
     }
     #menu{
         display: block;
-        font-size: 35px;
-        color: #fff;
-        position: absolute;
-        top: 13px;
-        right: 30px;
-        font-weight: 500;
-        cursor: pointer;
     }
     .show{
         background: #000;
@@ -252,19 +243,6 @@ footer{
         display: block;
         transition: all 10s;
     }
-    .show ul{
-        padding: 20px 0;
-        list-style: none;
-    }
-    .show ul li{
-        border-bottom: 1px solid #fff;
-        padding: 27px 10px;
-        margin-bottom: 10px;
-        cursor: pointer;
-    }
-    .show ul li a{
-        font-size: 18px;
-    }
 
     .rgt{
         display: none;
@@ -278,104 +256,26 @@ footer{
     }
     #side h2{
         width: 100%;
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 400;
         text-align: center;
     }
 
     .preview{
-        padding-left: 0;
+        padding-left: 5px;
+        padding-top: 120px;
     }
 
     #skills, #sec-field{
         margin-left: 0;
     }
-    #sec-field{
-        width: 100%;
-        height: auto;
-    }
 
-    #skills{
-        width: 100%;
-        height: auto;
-    }
     #skills ul li, #sec-field ul li{
         font-size: 15px;
+     }
+     footer{
+        text-align: center;
      }
      
-    ul{
-        padding: 10px;
-    }
 
 }
-@media screen and (max-width: 587px){
-    .Hero{
-        padding-left: 0;
-        padding-top: 5%;
-    }
- 
-    nav{
-        padding-bottom: 16px;
-    }
-    nav h1{
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
-    }
-    #menu{
-        top: 2px;
-    }
-    .rgt{
-        display: none;
-    }
-    .show ul li a{
-        font-size: 15px;
-    }
-
-    #side h2{
-        width: 100%;
-        padding-top: 20px;
-        font-size: 15px;
-        font-weight: 300;
-        text-align: center;
-    }
-
-    #skills, #sec-field{
-        margin-left: 0;
-    }
-    #sec-field{
-        width: 100%;
-        height: auto
-    }
-    #skills{
-        width: 100%;
-        height: auto;
-    }
-    #skills ul li, #sec-field ul li{
-        font-size: 15px;
-     }
-    ul{
-        padding: 5px;
-    }
-
-    footer{
-        word-spacing: 0;
-        font-size: 14px;
-    }
-
-}
-
-@media screen and (max-width: 440px){
-    .Hero{
-        padding-top: 20%;
-    }
-}
-@media screen and (max-width: 370px){
-    .Hero{
-        height: auto;
-        padding-top: 32%;
-    }
-    .preview{
-        padding-bottom: 30px;
-    }
-} */
