@@ -114,7 +114,7 @@ main{
     color: rgb(201, 198, 198);
     margin-bottom: 10px;
     display: inline;
-    animation: Blink 7s infinite;
+    animation: Blink 8s infinite;
     animation-delay: 3s;
 }
 
@@ -122,7 +122,8 @@ main{
     word-break: keep-all;
     line-height: 35px;
     font-size: 18px; 
-    text-align: left;
+    text-align: justify;
+    word-spacing: -1px;
     color: #ffffffcc;
     hyphens: none;
 }
@@ -147,8 +148,6 @@ button{
 #bt1{
     position: absolute;
     left: -100%;
-    transition: position ease-in 2s;
-    transition-duration: 2s;
 }
 #bt2{
     position: absolute;
@@ -164,26 +163,26 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px;
 
 }
 
 @keyframes Blink {
     0%{
-        color: rgb(201, 198, 198) ;
+        color: rgb(201, 198, 198);
     }
-    30%{
-        color: rgb(161, 21, 49) ;
+    35%{
+        color: salmon;
     }
     70%{
-        color: rgb(228, 31, 71);
+        color: blueviolet;
     }
     100%{
         color: crimson;
     }
 }
 
-@media screen and (max-width: 855px){
+@media screen and (max-width: 1178px){
     .main-info{
         max-width: 85%;
     }
@@ -266,8 +265,6 @@ footer{
     gap: 2px;
     flex-wrap: wrap;
   }
-
-
    footer{
     text-align: center;
    }
@@ -326,9 +323,6 @@ footer{
         }
         button{
             width: 100%;
-        }
-        .show{
-            overflow-y: scroll;
         }
         .bnt{
             margin-bottom: 10px;

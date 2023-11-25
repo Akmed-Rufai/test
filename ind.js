@@ -98,7 +98,9 @@ function bntt(){
 
 const inte =  setTimeout(()=>{
         btn.style.left = '0' 
-        bt.style.right= '0'    
+        bt.style.right= '0' 
+        btn.style.transition = 'left 1s ease'   
+        bt.style.transition = 'right 1s ease'   
 })
 
 }
