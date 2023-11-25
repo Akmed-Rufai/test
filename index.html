@@ -18,24 +18,30 @@
                  <a href="/downloads">Download PDF</a>
              </div>
         </div>
-        <i class='bx bx-menu' id="menu"></i>
-        <i class='bx bx-x' id="can"></i>
+        <div class="mobnav">
+            <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-x' id="can"></i>
+       </div>
              <div class="show">
                  <ul>
-                     <li><a href="./skill.html">Skills</a></li>
-                     <li><a href= "./assets/mohammed.pdf">Preview</a></li>
-                     <li style="border-bottom: none;"><a href="/downloads">Download PDF</a></li>
+                    <a href="./skill.html"> <li>Skills</li></a>
+                    <a href= "./assets/mohammed.pdf"><li>Preview</li></a>
+                    <a href="/downloads"><li style="border-bottom: none;">Download PDF</li></a>
                  </ul>
              </div>
      </nav>
        <div class="main">
           <main>
-            <div class="main-info" style='padding: 20px; color: #f6f6f6;' >
-              <h1 id="greet">Hi, My Name is</h1>
-              <h2 id="name">Mohammed Rufai</h2>
-              <p id='type'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic eum tempore minus unde? Ab perferendis blanditiis perspiciatis quos molestias corporis aperiam molestiae earum voluptas consequuntur quas accusamus, odit tenetur.</p>
-              <button class="btn" onclick="location.href='./assets/mohammed.pdf'">Preview</button>
-              <button class="btn" onclick="location.href='downloads'">Download</button>
+            <div class="main-info" style=" color: #f6f6f6; position: relative; padding: 30px 0;">
+              <p class="greet"></p>
+              <p class="name"></p>
+              <span class="wrk" style="display: inline; font-size: large; color: limegreen"></span>
+              <p class="info"></p>
+              <span class="chek" style="display: inline; position: absolute; bottom: -5px;"></span>
+            </div>
+            <div class="bnt">
+              <button id="bt1" onclick="location.href='./assets/mohammed.pdf'">Preview</button>
+              <button  id="bt2"onclick="location.href='downloads'">Download</button>
             </div>
           </main>
         </div>
@@ -43,15 +49,7 @@
             &copy; CopyRight Mohammed Rufai 2023
         </footer>
     </div>
-    <script>
-        let menu = document.getElementById('menu')
-        let show = document.getElementsByClassName('show')[0]
-        let icons = document.getElementById('can')
-
-        menu.addEventListener('click', ()=>{
-            show.classList.toggle('active')
-        })
-         
-    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="ind.js"></script>
 </body>
 </html>

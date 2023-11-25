@@ -18,16 +18,19 @@
                      <a href="/downloads">Download PDF</a>
                  </div>
             </div>
-            <i class='bx bx-menu' id="menu"></i>
-            <i class='bx bx-x' id="can"></i>
-                 <div class="show">
-                     <ul>
-                         <li><a href="./skill.html">Skills</a></li>
-                         <li><a href="./assets/mohammed.pdf">Preview</a></li>
-                         <li style="border-bottom: none;"><a href="/downloads">Download PDF</a></li>
-                     </ul>
-                 </div>
+           <div class="mobnav">
+                <i class='bx bx-menu' id="menu"></i>
+                <i class='bx bx-x' id="can"></i>
+           </div>
+            <div class="show">
+                <ul>
+                    <a href="./skill.html"> <li>Skills</li></a>
+                    <a href= "./assets/mohammed.pdf"><li>Preview</li></a>
+                    <a href="/downloads"><li style="border-bottom: none;">Download PDF</li></a>
+                </ul>
+            </div>
          </nav>
+
     <div class="main">
         <div class="preview">
             <div id='side'>
@@ -69,10 +72,19 @@
     </div>
     <script>
         let menu = document.getElementById('menu')
+        let can = document.getElementById('can')
         let show = document.getElementsByClassName('show')[0]
-
+        
         menu.onclick = () =>{
-            show.classList.toggle('active')
+            show.classList.add('active')
+            menu.style.display = 'none'
+            can.style.display = 'block'    
+        }
+        
+        can.onclick = () => {
+            show.classList.remove('active')
+            menu.style.display = 'block'
+            can.style.display = 'none'
         }
     </script>
 </body>
