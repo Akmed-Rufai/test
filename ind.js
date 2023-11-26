@@ -23,7 +23,7 @@ const line = [ 'CODE', 'EAT', 'SLEEP', 'REPEAT']
 document.addEventListener('DOMContentLoaded', ()=>{
 
 const typed = new Typed(".greet", {
-    strings: ['Hi,', 'My Name is'],
+    strings: ['Hi,^200', 'My Name is^500'],
     typeSpeed: 100,
     fadeOut: true,
     fadeOutDelay:300,
@@ -73,7 +73,7 @@ function startFourdAnimation() {
 }
 function startFiveAnimation() {
     let typed4 = new Typed(".chek", {
-    strings: line,
+    strings: ['CODE^400', 'EAT^400', 'SLEEP^400', 'REPEAT^400'],
     typeSpeed: 10,
     showCursor: true,
     loop: true,
@@ -90,8 +90,6 @@ function startFiveAnimation() {
 
 const btn = document.getElementById('bt1')
 const bt = document.getElementById('bt2')
-
-console.log(btn, bt);
 
 function bntt(){
 

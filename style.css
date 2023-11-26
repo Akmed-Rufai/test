@@ -12,7 +12,6 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 nav{
@@ -93,6 +92,8 @@ main{
     align-items: center;
     flex-direction: column;
     padding: 40px 0 60px;
+    overflow: hidden;
+    position: relative;
 }
 
 .main-info{
@@ -114,7 +115,7 @@ main{
     color: rgb(201, 198, 198);
     margin-bottom: 10px;
     display: inline;
-    animation: Blink 8s infinite;
+    animation: Blink 8s  alternate-reverse infinite;
     animation-delay: 3s;
 }
 
@@ -131,8 +132,7 @@ main{
 .bnt{
     width: 100%;
     max-width: 67%;
-    margin-top: 15px;
-    position: relative;
+    margin-top: 30px;
 }
 
 button{
@@ -143,14 +143,13 @@ button{
     background: #9a8478;
     border: none;
     color: aliceblue;
+    position: absolute;
 }
 
 #bt1{
-    position: absolute;
     left: -100%;
 }
 #bt2{
-    position: absolute;
     right: -100%;
 }
 
@@ -318,21 +317,34 @@ footer{
         align-items: center;
     }
     @media screen and (max-width: 263px){
-        main {
+        /* main {
             padding: 40px 0 0;
-        }
+        } */
         button{
             width: 100%;
         }
         .bnt{
             margin-bottom: 10px;
+           
         }
-
+        .main-info .name{
+            font-size: 25px;
+        }
+        .show{
+            height: auto;
+            overflow-y: scroll;
+        }
         #bt1{
-            position: static;
+            bottom: -10px;
+            left: 150%;
+            margin-bottom: 5px;
         }
         #bt2{
-            position: static;
+            bottom: -50px;
+             right: 150%;
+        }
+        footer{
+            padding: 10px 0;
         }
        
     }

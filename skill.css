@@ -288,6 +288,13 @@ footer{
      footer{
         text-align: center;
      }
+
+     @media screen and (max-width: 263px) {
+        .show{
+            height: auto;
+            overflow-y: scroll;
+        }
+     }
      
 
 }
