@@ -210,12 +210,12 @@ footer{
         position: absolute;
         top: -58px;
         left: 0;
+        transition: top 10s;
     }
     
     .show.active{
         top: 58px;
         display: block;
-        transition: all 10s;
     }
     
     .show ul{
@@ -317,9 +317,23 @@ footer{
         align-items: center;
     }
     @media screen and (max-width: 263px){
-        /* main {
-            padding: 40px 0 0;
-        } */
+        .show{
+            height: 200px;
+        }
+        
+        .show ul{
+            padding: 2px 0;
+            list-style: none;
+        }
+        
+        .show ul li{
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .show ul a{
+            font-size: 14px;
+        }
         button{
             width: 100%;
         }
@@ -330,14 +344,11 @@ footer{
         .main-info .name{
             font-size: 25px;
         }
-        .show{
-            height: auto;
-            overflow-y: scroll;
-        }
+     
         #bt1{
             bottom: -10px;
             left: 150%;
-            margin-bottom: 5px;
+            margin-bottom: 7px;
         }
         #bt2{
             bottom: -50px;
