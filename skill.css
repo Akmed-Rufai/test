@@ -130,6 +130,7 @@ ul{
 
 #sec-field li{
     font-size: 17px;
+    margin-bottom: 5px;
 }
 
 footer{
@@ -291,7 +292,23 @@ footer{
 
      @media screen and (max-width: 263px) {
         .show{
-            overflow-y: scroll;
+            .show{
+                height: 200px;
+            }
+            
+            .show ul{
+                padding: 2px 0;
+                list-style: none;
+            }
+            
+            .show ul li{
+                padding: 10px;
+                margin-bottom: 5px;
+            }
+            
+            .show ul a{
+                font-size: 14px;
+            }
         }
      }
      
