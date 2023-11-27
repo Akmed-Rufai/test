@@ -124,16 +124,18 @@ main{
     display: inline;
     animation: Blink 8s  alternate-reverse infinite;
     animation-delay: 3s;
+    margin-bottom: 5px;
 }
 
 .main-info p{
     word-break: keep-all;
     line-height: 35px;
-    font-size: 18px; 
+    font-size: 19px; 
     text-align: justify;
     word-spacing: -1px;
     color: #ffffffcc;
     hyphens: none;
+    color: #dcd7d7;
 }
 .chek{
     font-size: 20px; 
