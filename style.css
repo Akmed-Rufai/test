@@ -99,6 +99,13 @@ main{
 .main-info{
     width: 100%;
     max-width: 67%;
+    position: relative; 
+    padding: 30px 0;
+}
+.wrk{
+   display: inline; 
+   font-size: large; 
+   color: limegreen
 }
 .main-info .greet{
     letter-spacing: 3px; 
@@ -128,7 +135,12 @@ main{
     color: #ffffffcc;
     hyphens: none;
 }
-
+.chek{
+    font-size: 20px; 
+    position: absolute;
+    animation: Chek 4s infinite;
+    animation-delay: 1s;
+}
 .bnt{
     width: 100%;
     max-width: 67%;
@@ -144,6 +156,13 @@ button{
     border: none;
     color: aliceblue;
     position: absolute;
+    background: #1a1616;
+    border-radius: 5px;
+}
+
+button:hover{
+    color: #000;
+    background: rgb(69, 67, 67);
 }
 
 #bt1{
@@ -178,6 +197,17 @@ footer{
     }
     100%{
         color: crimson;
+    }
+}
+@keyframes Chek {
+    0%{
+        color: rgb(201, 198, 198);
+    }
+    35%{
+        color: salmon;
+    }
+    100%{
+        color: greenyellow;
     }
 }
 
@@ -295,13 +325,14 @@ footer{
        line-height: 30px;
       }
       .wrk{
-        font-size: 12px;
+        font-size: small;
       }
       .main-info p{
         font-size: 14px;
         line-height: 24px;
         word-break: break-all;
        }
+     
       .bnt{
         width: 100%;
         display: flex;

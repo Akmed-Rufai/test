@@ -266,6 +266,7 @@ footer{
         height: 50px;
         top: 60px;
         left: 0;
+        position: absolute;
     }
     #side h2{
         width: 100%;
@@ -292,7 +293,6 @@ footer{
 
      @media screen and (max-width: 263px) {
         .show{
-            .show{
                 height: 200px;
             }
             
@@ -310,7 +310,4 @@ footer{
                 font-size: 14px;
             }
         }
-     }
-     
-
-}
+    }

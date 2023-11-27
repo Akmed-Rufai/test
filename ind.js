@@ -18,7 +18,11 @@ const lines = [
     'I am a FullStack Web Developer with a passion for Technology and a knack for solving problems I like to think I am a go to fun person always thinking about the postives in life always looking to make a difference unafraid of failure because "Failure is a Pathway To Success" '
 ]
 
-const line = [ 'CODE', 'EAT', 'SLEEP', 'REPEAT']
+const line = ['***  CODE^400  ***', '***  EAT^400  ***', '***  SLEEP^400  ***', '***  REPEAT^400  ***']
+ 
+
+
+
 
 document.addEventListener('DOMContentLoaded', ()=>{
 
@@ -28,7 +32,6 @@ const typed = new Typed(".greet", {
     fadeOut: true,
     fadeOutDelay:300,
     loop: false,
-    showCursor: true,
     onComplete: (self) => {
     self.cursor.remove();
     startSecondAnimation();
@@ -40,7 +43,6 @@ function startSecondAnimation() {
     strings: ['Mohammed Rufai'],
     startDelay: 1000,
     typeSpeed: 100,
-    showCursor: true,
     onComplete: (self) => {
         self.cursor.remove();
         startThirdAnimation();
@@ -52,7 +54,6 @@ function startThirdAnimation() {
     let typed2 = new Typed(".wrk", {
     strings: ['FullStack Web Developer'],
     typeSpeed: 100,
-    showCursor: true,
     onComplete: (self) => {
         self.cursor.remove();
         startFourdAnimation()
@@ -63,7 +64,6 @@ function startFourdAnimation() {
     let typed3 = new Typed(".info", {
     strings: lines,
     typeSpeed: 10,
-    showCursor: true,
     loop: false,
     onComplete: (self) => {
         self.cursor.remove();
@@ -73,12 +73,12 @@ function startFourdAnimation() {
 }
 function startFiveAnimation() {
     let typed4 = new Typed(".chek", {
-    strings: ['CODE^400', 'EAT^400', 'SLEEP^400', 'REPEAT^400'],
+    strings: line,
     typeSpeed: 10,
-    showCursor: true,
     loop: true,
     loopCount: 3,
     fadeOut: true,
+    fadeOutDelay: 300,
     onComplete: (self) => {
         self.cursor.remove();
         bntt()
